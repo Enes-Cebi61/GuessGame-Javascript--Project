@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Set the character encoding for the document -->
+    <meta charset="utf-8">
+    
+    <!-- Set the title of the document -->
+    <title>Word Guessing Game</title>
+    
+    <!-- Set the favicon for the document -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+    
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="Guess.css">
+    
+    <!-- Configure the viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!-- Container for the entire content of the page -->
+    <div class="wrapper">
+      
+      <!-- Heading for the Word Guessing Game -->
+      <h1>Guess the Word</h1>
+      
+      <!-- Container for the main content of the game -->
+      <div class="content">
+        
+        <!-- Input field for typing a single letter -->
+        <input type="text" class="typing-input" maxlength="1">
+        
+        <!-- Container for displaying guessed letters -->
+        <div class="inputs"></div>
+        
+        <!-- Container for game details -->
+        <div class="details">
+          
+          <!-- Paragraph for displaying the hint -->
+          <p class="hint">Hint: <span></span></p>
+          
+          <!-- Paragraph for displaying the remaining guesses -->
+          <p class="guess-left">Remaining guesses: <span></span></p>
+          
+          <!-- Paragraph for displaying wrong letters -->
+          <p class="wrong-letter">Wrong letters: <span></span></p>
+        
+        </div>
+        
+        <!-- Button to refresh the word in the game -->
+        <button class="reset-btn">Refresh Word</button>
+      
+      </div>
+    
+    </div>
+
+    <!-- Include the JavaScript files for the game logic -->
+    <script src="gWords.js"></script>
+    <script src="Guess.js"></script>
+
+  </body>
+</html>
